@@ -47,12 +47,13 @@
 
     function updateSpeed() {
         const speed = geofs.aircraft.instance.groundSpeed; // Assuming GeoFS's speed is in m/s
-        speedDisplay.textContent = `Speed: ${(speed * 3.6).toFixed(2)} km/h`; // Convert m/s to km/h
+        speedDisplay.textContent = `Speed: ${(speed * 1.94384).toFixed(2)} knots`; // Convert m/s to knots
         requestAnimationFrame(updateSpeed);
     }
 
     updateSpeed();
 })();
+
 // GeoFS Distance Traveled Script
 
 (function() {
